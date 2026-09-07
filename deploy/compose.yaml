@@ -586,7 +586,7 @@ services:
       - no-new-privileges:true
 
   event-management-agent:
-    image: solace/event-management-agent:1.9.9@sha256:c5f3d9bf711dd051c14b162f10ecdbd7f3f7a85306d16c438c92229719123c5b
+    image: solace/event-management-agent:1.9.10@sha256:a9c605d7c22f764fcdf63e768db1b539befbab46c1c6df1f3e9ec5fb2652bd75
     platform: linux/amd64
     profiles: ["event-portal"]
     environment:
