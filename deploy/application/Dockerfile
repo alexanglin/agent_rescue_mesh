@@ -1,7 +1,7 @@
 # Build the production dashboard with ADR-0103's exact Node and pnpm toolchain. The final
 # application image receives only the production Vite output, never Node, pnpm, source tests,
 # generated test evidence, or the dependency tree (ADR-0184).
-FROM node:26.7.0-slim@sha256:5758d367d7b4f48b73a9bb3530e687e47efb289f3b43f9c0450a25225ae0db5d AS dashboard-builder
+FROM node:26.8.2-slim@sha256:f7bb8247fdb16250dbec7fd0e24f091c6f5f0a29d256f3aef5816a7a369166b2 AS dashboard-builder
 RUN npm install --global --ignore-scripts pnpm@11.23.0
 WORKDIR /workspace/apps/dashboard
 COPY apps/dashboard/package.json apps/dashboard/pnpm-lock.yaml apps/dashboard/pnpm-workspace.yaml ./
