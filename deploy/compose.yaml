@@ -57,7 +57,7 @@ x-application: &application
 
 services:
   broker:
-    image: solace/solace-pubsub-standard:10.26.0.8799@sha256:05f80ec7bd38c7592bebfb88a729b1b61c99fc1553758663f13eac626624698f
+    image: solace/solace-pubsub-standard:10.26.0.9219@sha256:c0020e53ed487ecffed6a15ef7ff1086ce969fd8b772cb06cfefc044eff5c0c8
     hostname: broker
     shm_size: 1g
     ulimits:
